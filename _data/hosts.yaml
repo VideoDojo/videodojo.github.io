@@ -1,0 +1,9 @@
+- name: Person Nodon
+  image: placeholder1
+  language: EN
+- name: UFO Nodon
+  image: placeholder3
+  language: JP
+- name: Car Nodon
+  image: placeholder2
+  language: EN

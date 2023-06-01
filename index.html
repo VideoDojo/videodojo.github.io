@@ -1,0 +1,60 @@
+---
+layout: base
+title: GBG 2nd Anniversary Jam
+---
+
+<header>
+    <section>
+        <img src="/assets/logoEn.svg" alt="GBG 2nd Anniversary Jam">
+    </section>
+</header>
+
+<main>
+    <section style="--headingFill: var(--accentRed);">
+        <h1>About the jam</h1>
+
+        <p>
+            This week, Game Builder Garage is turning 2 years old! Since the game's release, we got to play so many breathtaking creations from all over the world. But the first GBG creations we ever got to see, the ones showcased in the <a href="https://youtu.be/0yM3ppz0Zt8">game's announcement trailer</a>, were never released to the public.
+        </p>
+        <p>
+            So, to celebrate this anniversary, let's take a trip back to the past, and imagine what it could be like to play those lost trailer games! To participate, pick your favorite trailer game from the list below, and let it inspire you to create something! You could try to faithfully recreate it, or even remix the idea in fun and unexpected ways! Just make sure the original trailer game can be recognized in your creation.
+        </p>
+        <p>
+            Have fun, and happy programming!
+        </p>
+    </section>
+
+    <section style="--headingFill: var(--accentGreen);">
+        <h1>Trailer games</h1>
+    </section>
+
+    <section style="--headingFill: var(--accentBlue);">
+        <h1>Featured hosts</h1>
+
+        <p>Meet the hosts who will play your games on stream once the submission period ends!</p>
+        
+        <div class="hostGrid">
+            {% for host in site.data.hosts %}
+                <a href="https://www.youtube.com">
+                    <img src="/assets/{{ host.image }}.webp" alt="{{ host.name }}" class="hostPortrait">
+                    <p class="hostName">{{ host.name }} <span class="hostLanguage">({{ host.language }})</span></p>
+                </a href="https://www.youtube.com">
+            {% endfor %}
+        </div>
+    </section>
+
+    <section style="--headingFill: var(--accentOrange);">
+        <h1>Rules and Q&A</h1>
+
+        {% for question in site.data.qa %}
+            <details>
+                <summary>{{ question.q }}<span class="dropdownIndicator">▸</span></summary>
+                <p>{{ question.a }}</p>
+            </details>
+        {% endfor %}
+        
+    </section>
+</main>
+
+
+
