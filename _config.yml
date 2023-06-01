@@ -29,6 +29,7 @@ url: "https://gbgjam.info" # the base hostname & protocol for your site, e.g. ht
 # Build settings
 plugins:
   - jekyll-feed
+  - jekyll-redirect-from
 
 # Exclude from processing.
 # The following items will not be processed, by default.
