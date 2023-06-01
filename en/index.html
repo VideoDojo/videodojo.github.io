@@ -29,6 +29,15 @@ title: GBG 2nd Anniversary Jam
 
     <section style="--headingFill: var(--accentGreen);">
         <h1>Trailer games</h1>
+
+        <div class="gamesGrid">
+            {% for game in site.data.games %}
+                <article class="gameCard">
+                    <video src="/assets/video/{{ game.file }}.webm" controls muted="true" preload="metadata" loop="true"></video>
+                    <span>{{ game.title }}</span>
+                </article>
+            {% endfor %}
+        </div>
     </section>
 
     <section style="--headingFill: var(--accentBlue);">
