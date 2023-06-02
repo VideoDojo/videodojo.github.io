@@ -18,6 +18,7 @@ html {
     font-size: 16px;
     font-family: 'Rubik', 'Noto Sans JP', sans-serif;
     line-height: 1.5;
+    scroll-behavior: smooth;
 
     /* CSS variables */
 
@@ -33,8 +34,26 @@ html {
 }
 
 header {
-    padding-block: 3rem;
+    margin-block-end: 4rem;
+}
+
+header > div:first-child {
+    background: url("/assets/img/bgFIreworks.png");
+    padding-block: 2.5rem 3rem;
+    padding-inline: 1.5rem;
     text-align: center;
+}
+
+header > div:last-child {
+    background: url("/assets/img/bgStripes.png");
+    background-size: 32px;
+    padding-block: 1rem;
+    text-align: center;
+    color: var(--inkLight) !important;
+}
+
+header > div:last-child  a:any-link {
+    color: var(--inkLight);
 }
 
 section {
@@ -45,7 +64,8 @@ section {
 }
 
 footer {
-    background: var(--accentRed);
+    background: url("/assets/img/bgStripes.png");
+    background-size: 32px;
     text-align: center;
     color: var(--inkLight);
     display: flex;
@@ -172,6 +192,16 @@ a:any-link {
     text-decoration: underline;
 }
 
+a:any-link.button {
+    color: var(--inkLight);
+    display: inline-flex;
+    background-color: var(--accentRed);
+    padding: 1rem 2rem;
+    border-radius: 10rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
 details {
     list-style: none;
     display: block;
@@ -211,17 +241,30 @@ details[open] > summary .icon {
 }
 
 
-.timeWidget {
+#timeWidget {
     background: var(--container);
     border-radius: 1rem;
-    border: 4px solid var(--accentRed);
+    border: 4px solid var(--ink);
     box-shadow: 0 0.4rem 0 0 var(--shadow);
 }
 
+#notice {
+    text-align: center;
+    background: var(--container);
+    border-radius: 1rem;
+    border: 4px solid var(--ink);
+    box-shadow: 0 0.4rem 0 0 var(--shadow);
+    padding: 1rem;
+}
+
 .dueDateWidget {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
     padding: 1rem;
     text-align: center;
-    border-block-end: 4px solid var(--accentRed);
+    border-block-end: 4px solid var(--ink);
 }
 
 #startDate, #dueDate {
@@ -255,6 +298,10 @@ details[open] > summary .icon {
     color: var(--accentRed);
     font-size: 2rem;
     line-height: 1.1;
+}
+
+.hidden {
+    display: none;
 }
 
 @media screen and (min-width: 960px) {

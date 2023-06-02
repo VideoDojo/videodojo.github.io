@@ -3,8 +3,8 @@
 var dateStart = Date.UTC(2023, 5, 3, 22, 59, 0);
 var dateEnd = Date.UTC(2023, 5, 10, 22, 59, 0);
 
-var startDate = new Intl.DateTimeFormat(['en-US', 'en-GB', 'jp'], { dateStyle: 'medium', timeStyle: 'short'}).format(dateStart);
-var dueDate = new Intl.DateTimeFormat(['en-US', 'en-GB', 'jp'], { dateStyle: 'medium', timeStyle: 'short'}).format(dateEnd);
+var startDate = new Intl.DateTimeFormat(['en-US', 'en-GB', 'ja'], { dateStyle: 'medium', timeStyle: 'short'}).format(dateStart);
+var dueDate = new Intl.DateTimeFormat(['en-US', 'en-GB', 'ja'], { dateStyle: 'medium', timeStyle: 'short'}).format(dateEnd);
 
 var startDateEl = document.getElementById("startDate");
 startDateEl.textContent = startDate;

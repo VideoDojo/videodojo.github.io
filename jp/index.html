@@ -1,7 +1,7 @@
 ---
 layout: base
 title: GBG 2nd Anniversary Jam
-lang: en
+lang: ja
 ---
 
 <header>
@@ -9,7 +9,7 @@ lang: en
         <img src="/assets/img/logoEnNegative.svg" alt="GBG 2nd Anniversary Jam">
     </div>
     <div>
-        <p>English - <a href="/jp/">日本語</a></p>
+        <p><a href="/en/">English</a> - 日本語</p>
     </div>
 </header>
 
@@ -18,21 +18,21 @@ lang: en
         {% include countdownWidget.html %}
     </section>
     <section style="--headingFill: var(--accentRed);" id="about-the-jam">
-        <h1>About the jam</h1>
+        <h1>ジャムについて</h1>
 
         <p>
-            This week, Game Builder Garage is turning 2 years old! Since the game's release, we got to play so many breathtaking creations from all over the world. But the first GBG creations we ever got to see, the ones showcased in the <a href="https://youtu.be/0yM3ppz0Zt8">game's announcement trailer</a>, were never released to the public.
+            今週、はじめてゲームプログラミングは2歳を迎えます！発売以来、私たちは世界中の素晴らしい作品をプレイすることができました。ところで私たちが最初に見たはじプロ作品は商品のコマーシャル用に作られたもので、一般に公開されることはありませんでした。
         </p>
         <p>
-            So, to celebrate this anniversary, let's take a trip back to the past, and imagine what it could be like to play those lost trailer games! To participate, pick your favorite trailer game from the list below, and let it inspire you to create something! You could try to faithfully recreate it, or even remix the idea in fun and unexpected ways! Just make sure the original trailer game can be recognized in your creation.
+            過去にさかのぼって失われたトレーラーゲームをプレイ出来たらどんな感じになるなのか、この記念すべき時に一緒に創造してみませんか！以下のリストから好きな作品を選び、そのゲームから着想を得て素晴らしいものを作ってください！忠実に再現してもいいし、思いもよらない楽しい方法でアイデアをリミックスしてもかまいません！但しどのトレーラーゲームをもとにしたかを分かるようにしてください。
         </p>
         <p>
-            Have fun, and happy programming!
+            それでは、楽しいプログラミングを楽しみましょう！
         </p>
     </section>
 
     <section style="--headingFill: var(--accentGreen);" id="trailer-games">
-        <h1>Trailer games</h1>
+        <h1>トレーラーゲーム</h1>
 
         <div class="gamesGrid">
             {% for game in site.data.games %}
@@ -45,9 +45,9 @@ lang: en
     </section>
 
     <section style="--headingFill: var(--accentBlue);" id="featured-hosts">
-        <h1>Featured hosts</h1>
+        <h1>注目のホスト</h1>
 
-        <p>Meet the hosts who will play your games on stream once the submission period ends!</p>
+        <p>応募期間終了後、チャンネルであなたのゲームをプレイしてくれる配信者を紹介します！</p>
         
         <div class="hostGrid">
             {% for host in site.data.hosts %}
@@ -60,9 +60,9 @@ lang: en
     </section>
 
     <section style="--headingFill: var(--accentOrange);" id="rules-and-qa">
-        <h1>Rules and Q&A</h1>
+        <h1>ルールとQ&A</h1>
 
-        {% for question in site.data.qa %}
+        {% for question in site.data.qaJP %}
             <details>
                 <summary>{{ question.q }}<span class="icon">▶️</span></summary>
                 <p>{{ question.a }}</p>
@@ -75,7 +75,7 @@ lang: en
 <footer>
     <p>An event organized by <a href="https://twitter.com/VideoDojoPro">VideoDojo</a>.</p>
     <p>Site designed by <a href="https://twitter.com/voxybuns">Voxy</a>, translated into Japanese by <a href="https://twitter.com/cabbagestole">きゃべつ</a>.</p>
-    <p>This event is not affiliated to, or endorsed by Nintendo.</p>
+    <p>本イベントは任天堂とは一切関係ありません。</p>
 </footer>
 
 

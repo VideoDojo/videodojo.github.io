@@ -1,9 +1,12 @@
-- name: Person Nodon
-  image: placeholder1
+- name: VideoDojo
+  image: hostVideoDojo.jpg
   language: EN
-- name: UFO Nodon
-  image: placeholder3
+  channel: "https://www.youtube.com/@VideoDojoPro"
+- name: TACTY
+  image: hostTacty.jpg
   language: JP
-- name: Car Nodon
-  image: placeholder2
+  channel: "https://www.youtube.com/@tactylabo"
+- name: jJae Studio
+  image: hostjJae.jpg
   language: EN
+  channel: "https://www.youtube.com/@jJaeStudio"

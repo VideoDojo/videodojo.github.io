@@ -5,7 +5,7 @@ var now = Date.now();
 var targetDate = Date.UTC(2023, 5, 10, 22, 59, 0);
 
 // Calculate the time difference in milliseconds
-var timeDiff = targetDate - now;
+var timeDiff = 5000;
 
 // Fetch the widgets
 var countdownEl = document.getElementById("timeWidget");
