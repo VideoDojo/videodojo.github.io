@@ -1,35 +1,85 @@
 <div id="timeWidget">
     <div class="dueDateWidget">
         <span>
-            Submissions are open from <span id="startDate"></span> until <span id="dueDate"></span>
+            {% if page.lang == "en" %}
+                Submissions are open from <span id="startDate"></span> until <span id="dueDate"></span>
+            {% endif %}
+            {% if page.lang == "ja" %}
+                募集期間は <span id="startDate"></span> から <span id="dueDate"></span> まで
+            {% endif %}
         </span>
-        <a href="https://forms.gle/fG6mrL6wUnKbHZnF8" class="button">Submit your game</a>
+        <a href="https://forms.gle/fG6mrL6wUnKbHZnF8" class="button">
+            {% if page.lang == "en" %}    
+                Submit your game
+            {% endif %}
+            {% if page.lang == "ja" %}    
+                応募する
+            {% endif %}
+        </a>
     </div>
     <div class="countdownWidget">
         <div>
-            The submission period ends in...
+            {% if page.lang == "en" %}    
+                The submission period ends in...
+            {% endif %}
+            {% if page.lang == "ja" %}    
+                募集締め切りまで...
+            {% endif %}
         </div>
         <div class="countdown">
             <div class="countdownSection">
                 <span id="countdownDays"></span>
-                <span>days</span>
+                <span>
+                    {% if page.lang == "en" %}
+                        days
+                    {% endif %}
+                    {% if page.lang == "ja" %}
+                        日
+                    {% endif %}
+                </span>
             </div>
             <div class="countdownSection">
                 <span id="countdownHours"></span>
-                <span>hours</span>
+                <span>
+                    {% if page.lang == "en" %}
+                        hours
+                    {% endif %}
+                    {% if page.lang == "ja" %}
+                        時間
+                    {% endif %}
+                </span>
             </div>
             <div class="countdownSection">
                 <span id="countdownMinutes"></span>
-                <span>minutes</span>
+                <span>
+                    {% if page.lang == "en" %}
+                        minutes
+                    {% endif %}
+                    {% if page.lang == "ja" %}
+                        分
+                    {% endif %}
+                </span>
             </div>
             <div class="countdownSection">
                 <span id="countdownSeconds"></span>
-                <span>seconds</span>
+                <span>
+                    {% if page.lang == "en" %}
+                        seconds
+                    {% endif %}
+                    {% if page.lang == "ja" %}
+                        秒
+                    {% endif %}
+                </span>
             </div>
         </div>
     </div>
 </div>
 
 <div id="notice" class="hidden">
-    Submissions are now closed, thank you for participating! Stay tuned for the celebration streams by our <a href="#featured-hosts">featured hosts!</a>
+    {% if page.lang == "en" %}
+        Submissions are now closed, thank you for participating! Stay tuned for the celebration streams by our <a href="#featured-hosts">featured hosts!</a>
+    {% endif %}
+    {% if page.lang == "ja" %}
+        募集は締め切りました。沢山のご参加ありがとうございました！<a href="#featured-hosts">注目のホスト</a>による配信をお待ちください！
+    {% endif %}
 </div>
