@@ -177,7 +177,7 @@ em, i {
     font-style: italic;
 }
 
-span.icon {
+[class^="icon-"]:before, [class*=" icon-"]:before {
     font-family: 'Jam Icons';
     font-size: 24px;
     line-height: 1em;
@@ -228,15 +228,20 @@ details > summary {
     list-style: none;
 }
 
+details > summary::marker, /* Latest Chrome, Edge, Firefox */ 
+details > summary::-webkit-details-marker /* Safari */ {
+  display: none;
+}
+
 details[open] > summary {
     border-block-end: 4px solid var(--headingFill);
 }
 
-summary .icon {
+summary [class^="icon-"]:before, [class*=" icon-"]:before {
     transition: transform 0.2s ease;
 }
 
-details[open] > summary .icon {
+details[open] > summary [class^="icon-"]:before, [class*=" icon-"]:before {
     transform: rotate(90deg);
 }
 
@@ -303,6 +308,8 @@ details[open] > summary .icon {
 .hidden {
     display: none;
 }
+
+.icon-chevronright:before { content: '\e801'; }
 
 @media screen and (min-width: 960px) {
     html {
