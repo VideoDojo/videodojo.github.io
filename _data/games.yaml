@@ -1,7 +1,7 @@
 - title: ALIEN SHOOTING
   file: alienShooting
 
-- title: Animal Brawl
+- title: Animal Brawl*
   file: animalBrawl
 
 - title: Baseball
@@ -13,13 +13,13 @@
 - title: Bricks
   file: bricks
 
-- title: Bunny Shmup!
+- title: Bunny Shmup!*
   file: bunnyShmup
 
 - title: Caterpillar
   file: caterpillar
 
-- title: Color Match
+- title: Color Match*
   file: colorMatch
 
 - title: Cosmic Walk
@@ -34,10 +34,10 @@
 - title: Desert Force
   file: desertForce
 
-- title: Dungeon
+- title: Dungeon*
   file: dungeon
 
-- title: Frog Flip
+- title: Frog Flip*
   file: frogFlip
 
 - title: Fruits
@@ -61,10 +61,10 @@
 - title: Pass the Ball
   file: passTheBall
 
-- title: Rolling World
+- title: Rolling World*
   file: rollingWorld
 
-- title: Sephamore
+- title: Sephamore*
   file: sephamore
 
 - title: Shadowgraph
@@ -76,10 +76,10 @@
 - title: Soccer
   file: soccer
 
-- title: Star Race
+- title: Star Race*
   file: starRace
 
-- title: Sword Saviour
+- title: Sword Saviour*
   file: swordSaviour
 
 - title: Tanks

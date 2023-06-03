@@ -29,11 +29,14 @@ lang: en
         <p>
             Have fun, and happy programming!
         </p>
+        <div style="display: flex; justify-content: center; margin-block-start: 1rem;">
+            <a href="#rules-and-qa" class="button">Rules and Q&A</a>
+        </div>
+        
     </section>
 
     <section style="--headingFill: var(--accentGreen);" id="trailer-games">
-        <h1>Trailer games</h1>
-
+        <h1>Trailer games*</h1>
         <div class="gamesGrid">
             {% for game in site.data.games %}
                 <article class="gameCard">
@@ -42,6 +45,9 @@ lang: en
                 </article>
             {% endfor %}
         </div>
+        <p style="font-size: 0.8rem; margin-block-start: 0.5rem">
+            * Title is not official, and is for illustrative purposes only.
+        </p>
     </section>
 
     <section style="--headingFill: var(--accentBlue);" id="featured-hosts">
@@ -53,7 +59,18 @@ lang: en
             {% for host in site.data.hosts %}
                 <a href="{{ host.channel }}">
                     <img src="/assets/img/{{ host.image }}" alt="{{ host.name }}" class="hostPortrait">
-                    <p class="hostName">{{ host.name }} <span class="hostLanguage">({{ host.language }})</span></p>
+                    <p class="hostName">
+                        {{ host.name }}
+                        <span class="hostLanguage">({{ host.language }})</span>
+                        <br>
+                        <span class="hostTime">
+                            {% if host.time != "none" %}
+                                {{ host.time }}
+                            {% else %}
+                                To be announced
+                            {% endif %}
+                        </span>
+                    </p>
                 </a>
             {% endfor %}
         </div>

@@ -29,10 +29,13 @@ lang: ja
         <p>
             それでは、プログラミングを楽しみましょう！
         </p>
+        <div style="display: flex; justify-content: center; margin-block-start: 1rem;">
+            <a href="#rules-and-qa" class="button">ルールとQ&A</a>
+        </div>
     </section>
 
     <section style="--headingFill: var(--accentGreen);" id="trailer-games">
-        <h1>トレーラーゲーム</h1>
+        <h1>トレーラーゲーム*</h1>
 
         <div class="gamesGrid">
             {% for game in site.data.games %}
@@ -42,6 +45,9 @@ lang: ja
                 </article>
             {% endfor %}
         </div>
+        <p style="font-size: 0.8rem; margin-block-start: 0.5rem">
+            * タイトルは正式なものではなく、説明用のものです。
+        </p>
     </section>
 
     <section style="--headingFill: var(--accentBlue);" id="featured-hosts">
@@ -53,7 +59,18 @@ lang: ja
             {% for host in site.data.hosts %}
                 <a href="{{ host.channel }}">
                     <img src="/assets/img/{{ host.image }}" alt="{{ host.name }}" class="hostPortrait">
-                    <p class="hostName">{{ host.name }} <span class="hostLanguage">({{ host.language }})</span></p>
+                    <p class="hostName">
+                        {{ host.name }}
+                        <span class="hostLanguage">({{ host.language }})</span>
+                        <br>
+                        <span class="hostTime">
+                            {% if host.time != "none" %}
+                                {{ host.time_jp }}
+                            {% else %}
+                                発表予定
+                            {% endif %}
+                        </span>
+                    </p>
                 </a>
             {% endfor %}
         </div>

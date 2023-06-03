@@ -2,11 +2,15 @@
   image: hostVideoDojo.jpg
   language: EN
   channel: "https://www.youtube.com/@VideoDojoPro"
+  time: "June 11, 2023, 13:30 UTC+1"
+  time_jp: "日本時間の6月11日21:30に"
 - name: TACTY
   image: hostTacty.jpg
   language: JP
+  time: none
   channel: "https://www.youtube.com/@tactylabo"
 - name: jJae Studio
   image: hostjJae.jpg
   language: EN
   channel: "https://www.youtube.com/@jJaeStudio"
+  time: none

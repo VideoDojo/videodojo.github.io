@@ -117,7 +117,7 @@ footer > p:not(:last-child) {
     box-shadow: 0 0.4rem 0 0 var(--shadow);
 }
 
-.hostLanguage {
+.hostLanguage, .hostTime {
     font-size: initial;
     font-weight: initial;
 }
@@ -165,8 +165,8 @@ h1 {
     box-shadow: 0 0.4rem 0 0 var(--shadow);
 }
 
-p:not(:last-child) {
-    margin-block-end: 1.5rem;
+p + :is(p, a, .hostGrid){
+    margin-block-start: 1.5rem;
 }
 
 strong, b {
@@ -200,6 +200,7 @@ a:any-link.button {
     border-radius: 10rem;
     text-decoration: none;
     font-weight: bold;
+    text-align: center;
 }
 
 details {
