@@ -40,7 +40,7 @@ lang: en
         <div class="gamesGrid">
             {% for game in site.data.games %}
                 <article class="gameCard">
-                    <video src="/assets/video/{{ game.file }}.webm#t=0.001" controls muted="true" preload="metadata" loop="true"></video>
+                    <video src="/assets/video/{{ game.file }}.mp4#t=0.001" controls muted="true" preload="metadata" loop="true"></video>
                     <span>{{ game.title }}</span>
                 </article>
             {% endfor %}
